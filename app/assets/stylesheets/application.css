@@ -22,7 +22,6 @@
  *= require animate/animate
  */
 
-//Core Css
 @import "default";
 @import "bootstrap";
 @import "font-awesome";
