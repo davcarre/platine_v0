@@ -12,11 +12,11 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require jquery3
+//= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require popper
 //= require bootstrap
+//= require popper
 //= require rwdtable/rwd-table
 //= require counter-up/jquery.counterup
 //= require datepicker/bootstrap-datepicker
