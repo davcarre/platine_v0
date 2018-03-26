@@ -17,6 +17,10 @@
 //= require jquery-ui
 //= require bootstrap
 //= require popper
+//= require single-map
+//= require map
+//= require custom
+//= require searchmap
 //= require rwdtable/rwd-table
 //= require counter-up/jquery.counterup
 //= require datepicker/bootstrap-datepicker
@@ -29,6 +33,3 @@
 //= require rateyo/jquery.rateyo
 //= require map/rich-marker
 //= require map/infobox_packed
-//= require single-map
-//= require map
-//= require custom
