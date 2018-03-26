@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require jquery-ui
  *= require rwdtable/rwd-table
  *= require listtyicons/style
  *= require datepicker/datepicker.min
@@ -19,11 +20,11 @@
  *= require map/map
  *= require rateyo/jquery.rateyo.min
  *= require animate/animate
- *= require jquery-ui
  */
 
 //Core Css
+@import "bootstrap";
 @import "font-awesome";
 @import "default";
 @import "style";
-@import "bootstrap";
+
