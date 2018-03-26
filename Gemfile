@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'bootstrap-sass', '~> 3.3.7'
 gem 'popper_js', '~> 1.12.9'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
