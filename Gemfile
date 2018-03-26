@@ -18,7 +18,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -34,6 +33,11 @@ gem 'popper_js', '~> 1.12.9'
 gem 'font-awesome-rails'
 gem 'fancybox-rails'
 gem 'owlcarousel-rails'
+#get this set up for Heraku needing Yarn. Need to get Yarn & Node.js set up on the mac
+# https://yarnpkg.com/lang/en/docs/install/
+# https://nodejs.org/en/download/
+# https://github.com/rails/webpacker
+gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
