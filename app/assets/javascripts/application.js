@@ -16,5 +16,16 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require popper
+//= require custom
+//= require rwdtable/rwd-table
+//= require counter-up/jquery.counterup
+//= require datepicker/bootstrap-datepicker
+//= require selectbox/jquery.selectbox-0.1.3.min
+//= require owl-carousel/owl.carousel
+//= require slick/slick
+//= require isotope/isotope
+//= require fancybox/jquery.fancybox
+//= require isotope/isotope-triger
+//= require rateyo/jquery.rateyo
 //= require bootstrap
 //= require bootstrap-sprockets
