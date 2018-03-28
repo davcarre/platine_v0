@@ -1,0 +1,86 @@
+<%= render 'shared/navbar_standard' %>
+
+<!-- PAGE TITLE SECTION -->
+<section class="clearfix pageTitleSection bg-image" style="background-image: url(<%= asset_path 'background/bg-contactus.jpg' %>);">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pageTitle">
+					<h2>Nous contacter</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-xs-12">
+				<div class="contactInfo">
+					<ul class="list-unstyled list-address">
+						<li>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							12 rue Fosh <br> 75016 Paris
+						</li>
+						<li>
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							+33 6045241
+						</li>
+						<li>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<a href="#">info@platine.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-8 col-xs-12">
+				<div class="signUpFormArea">
+					<div class="priceTableTitle">
+						<h2>Des questions?</h2>
+						<p>N'hésitez pas à nous envoyer vos questions via ce formulaire, nous vous répondrons avec plaisir !</p>
+					</div>
+					<div class="signUpForm">
+						<form action="#" method="">
+							<div class="formSection">
+								<div class="row">
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="selectSome" class="control-label">Sujet*</label>
+										<div class="contactSelect">
+											<select name="guiest_id8" id="guiest_id8" class="select-drop">
+												<option value="0">-- Selectionnez un sujet--</option>
+												<option value="1">Je suis artiste, je veux plus d'infos</option>
+												<option value="2">Je suis futur marié, je veux plus d'infos</option>
+												<option value="3">Autres</option>            
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="companyName" class="control-label">Nom de votre société</label>
+										<input type="text" class="form-control" id="companyName">
+									</div>
+									<div class="form-group col-sm-12 col-xs-12">
+										<label for="yourName" class="control-label">Votre nom*</label>
+										<input type="text" class="form-control" id="yourName">
+									</div>
+									<div class="form-group col-sm-12 col-xs-12">
+										<label for="emailAddress" class="control-label">Votre email*</label>
+										<input type="email" class="form-control" id="emailAddress">
+									</div>
+									<div class="form-group col-sm-12 col-xs-12">
+										<label for="textBox" class="control-label">Votre demande*</label>
+										<textarea class="form-control" rows="3"></textarea>
+									</div>
+									<div class="form-group col-sm-12 col-xs-12 mb0">
+										<button type="submit" class="btn btn-primary">Envoyer</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

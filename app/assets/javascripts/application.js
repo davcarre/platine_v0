@@ -16,7 +16,6 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require popper
-//= require custom
 //= require rwdtable/rwd-table
 //= require counter-up/jquery.counterup
 //= require datepicker/bootstrap-datepicker
@@ -29,3 +28,4 @@
 //= require rateyo/jquery.rateyo
 //= require bootstrap
 //= require bootstrap-sprockets
+//= require custom
