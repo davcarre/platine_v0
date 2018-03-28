@@ -12,7 +12,7 @@
   </head>
   <body id="body" class="body-wrapper boxed-menu" >
     <div class="page-loader" style="background: url(<%= asset_path 'preloader.gif' %>) center no-repeat #fff;"></div> 
-    <!-- Preloader -->
+    <!-- Preloader -
     <div id="preloader" class="smooth-loader-wrapper">
       <div class="smooth-loader">
         <div class="loader1">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div> 
-
+-->
 
     <%= yield %>
 
@@ -36,7 +36,7 @@
           <div class="row">
             <div class="col-sm-3 col-xs-12">
               <div class="footerText">
-                <a class="footerLogo" href="index.html">
+                <a class="footerLogo" href="<%= root_path %>">
                   <img src="<%= asset_path 'logo/logo-blanc.svg' %>" height="44px" width="140px" />
                 </a>
                 <ul class="list-styled list-contact">
@@ -137,5 +137,6 @@
       </div>
     </div>
 
+ 
 
 </html>

@@ -1,6 +1,7 @@
+
+//============================== PRE LOADER =============================================
 jQuery(document).ready(function(){
   'use strict';
-  //============================== PRE LOADER =============================================
   setTimeout(function(){
     $('body').addClass('loaded');
   }, 3000);
