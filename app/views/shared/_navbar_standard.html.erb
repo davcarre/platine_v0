@@ -14,7 +14,17 @@
             <a class="navbar-brand" href="<%= root_path %>">
             <img src="<%= asset_path 'logo/logo-blanc.svg' %>" height="44px" width="140px" />
             </a>
-            <a class="btn btn-default navbar-btn" href="add-listings.html">S'inscrire</a>
+<% if user_signed_in? %>
+
+            <%= button_to "Se déconnecter", destroy_user_session_path, method: :delete, class: 'btn btn-default navbar-btn'%>
+            
+
+<% else %>   
+              <%= button_to "Se connecter", new_user_session_path, class: 'btn btn-default navbar-btn' %>
+            
+            
+         
+<% end %>
          </div> 
       </nav>
     </div>
