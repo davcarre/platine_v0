@@ -6,9 +6,9 @@
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<title>Platine</title>
-    <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag  "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
   </head>
   <body id="body" class="body-wrapper boxed-menu" >
     <div class="page-loader" style="background: url(<%= asset_path 'preloader.gif' %>) center no-repeat #fff;"></div> 
@@ -24,6 +24,11 @@
       </div>
     </div> 
 -->
+
+  <!-- Flash Messages -->
+  <% flash.each do |name, message|%>
+   <%= content_tag(:div, message, class: "alert alert-info #{name}") %>
+  <% end %>
 
     <%= yield %>
 
