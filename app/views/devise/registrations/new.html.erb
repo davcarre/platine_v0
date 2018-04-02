@@ -1,29 +1,73 @@
-<h2>Sign up</h2>
+<%= render 'shared/navbar_without_login' %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<!-- PAGE TITLE SECTION -->
+<section class="clearfix pageTitleSection" style="background-image: url(<%= asset_path 'background/bg-contactus.jpg' %>);">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pageTitle">
+          <h2>Inscription</h2>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+<!-- SIGN UP SECTION -->
+<section class="clearfix signUpSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        <div class="signUpFormArea">
+          <div class="priceTableTitle">
+            <h2>Créer un compte</h2>
+            <p>Merci de remplir les informations suivantes afin de créer votre compte. Un email de confirmation vous sera envoyé. Si vous avez déja un compte, <%= link_to "cliquez ici", new_user_session_path, class: 'link' %>.</p>
+          </div>
+
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= devise_error_messages! %>
+            <div class="formSection">
+              <h3>Vos informations</h3>
+                <div class="row">
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label class="control-label">Adresse email</label><br />
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+                  </div>
+
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label class="control-label">Mot de passe
+                    <% if @minimum_password_length %>
+                    (<%= @minimum_password_length %> caractères minimum)
+                    <% end %></label><br />
+                    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+                  </div>
+
+                  <div class="form-group col-sm-6 col-xs-12">
+                    <label class="control-label">Confirmez votre mot de passe</label><br />
+                    <%= f.password_field :password_confirmation, autocomplete: "off" , class: 'form-control' %>
+                  </div>
+                
+                <div class="col-sm-12 col-xs-12">
+                  <%= f.submit "S'inscrire", class: 'btn btn-primary' %>
+                
+                </div>
+              </div>
+            </div> 
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div> 
   </div>
+</section>    
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+  
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+        
 
-<%= render "devise/shared/links" %>
+
+
+
+  
+            
+                
