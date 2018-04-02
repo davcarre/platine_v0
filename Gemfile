@@ -40,6 +40,7 @@ gem 'owlcarousel-rails'
 # https://github.com/rails/webpacker
 gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 gem 'devise'
+gem 'activeadmin'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
